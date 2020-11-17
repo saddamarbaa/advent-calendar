@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: url(/assets/images/christmas_bg.jpg);
+    background-image: url('/assets/images/christmas_bg.jpg');
     background-size: cover;
     background-repeat: none;
     padding: 3vh;
