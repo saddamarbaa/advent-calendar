@@ -20,7 +20,7 @@
 }
 
 body {
-    background-image: url(/assets/images/christmas_bg.jpg);
+    background-image: url("/assets/images/christmas_bg.jpg");
     background-size: cover;
     background-repeat: none;
     padding: 3vh;
@@ -40,7 +40,30 @@ body {
     max-width: 768px;
 }
 
+
+/* =====================
+   container 
+   ===================== */
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 15px;
+    grid-auto-flow: dense;
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+    height: 90vh;
+}
+
+
+/* =====================
+   container-item 
+   ===================== */
+
+.container-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
 }
