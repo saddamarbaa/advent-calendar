@@ -38,6 +38,7 @@ body {
 
 .container-wrapper {
     max-width: 768px;
+    width: 768px;
 }
 
 
@@ -58,7 +59,7 @@ body {
 
 
 /* =====================
-   container-item 
+   Start container-item 
    ===================== */
 
 .container-item {
@@ -67,3 +68,48 @@ body {
     align-items: center;
     border: 1px solid;
 }
+
+
+/* =====================
+      title
+   ===================== */
+
+.title {
+    grid-row: span 1;
+    grid-column: span 3;
+}
+
+
+/* =====================
+      Start Days
+   ===================== */
+
+.day1,
+.day10,
+.day14,
+.day15,
+.day23 {
+    grid-row: span 2;
+}
+
+.day4,
+.day9,
+.day18,
+.day22 {
+    grid-column: span 2;
+}
+
+.day24 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.day25 {
+    grid-row: span 1;
+    grid-column: span 3;
+}
+
+
+/* =====================
+      Animation
+   ===================== */
