@@ -2,12 +2,45 @@
    style.CSS
    These are the final styles for the project.
 
-   Course:  CSS3 in 30 Days
    Author:  Saddam Arbaa
    Website: (TODO)
    ========================================== */
 
 
+/* ====== Import google fonts =========== */
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap");
+
 /* =====================
-   FACEBOOK STYLE BUTTON
+   Start the Main Rules
    ===================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/images/christmas_bg.jpg);
+    background-size: cover;
+    background-repeat: none;
+    padding: 3vh;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+/* =====================
+   container-wrapper 
+   ===================== */
+
+.container-wrapper {
+    max-width: 768px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
