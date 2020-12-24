@@ -4,8 +4,8 @@
  Built with HTML5 CSS Flexbox and CSS Grid(Responsive)
  
  
- ## GitHub Pages  (URL FOR TESTING)
-https://saddamarbaa.github.io/advent-calendar/
+ ## Click the link blow to see the [GitHub Pages]: (https://saddamarbaa.github.io/project_advent-calendar)
+ 
  
 
 
