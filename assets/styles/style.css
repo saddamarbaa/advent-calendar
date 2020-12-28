@@ -1,117 +1,97 @@
 /* ==========================================
    style.CSS
    These are the final styles for the project.
-
    Author:  Saddam Arbaa
    Website: (TODO)
    ========================================== */
-
 
 /* ====== Import google fonts =========== */
 
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap");
 
-/* =====================
-   Start the Main Rules
-   ===================== */
-
+/* ====== Global Rules ======*/
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("/assets/images/christmas_bg.jpg");
-    background-size: cover;
-    background-repeat: none;
-    padding: 3vh;
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    font-family: "Josefin Sans", sans-serif;
+  background-image: url("../images/christmas_bg.jpg");
+  background-size: cover;
+  background-repeat: none;
+  padding: 3vh;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-
-/* =====================
-   container-wrapper 
-   ===================== */
+/* ====== container-wrapper ======*/
 
 .container-wrapper {
-    max-width: 768px;
-    width: 768px;
+  max-width: 768px;
+  width: 768px;
 }
 
-
-/* =====================
-   container 
-   ===================== */
+/* ====== container ======*/
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 15px;
-    grid-auto-flow: dense;
-    grid-auto-rows: 100px;
-    grid-auto-columns: 100px;
-    height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 15px;
+  grid-auto-flow: dense;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+  height: 90vh;
 }
 
-
-/* =====================
-   Start container-item 
-   ===================== */
+/* ====== Start container-item  ======*/
 
 .container-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* =====================
-      title
-   ===================== */
+/* ====== title  ======*/
 
 .title {
-    grid-row: span 2;
-    grid-column: span 3;
-    color: #daa520;
-    font-size: 5rem;
+  grid-row: span 2;
+  grid-column: span 3;
+  color: #daa520;
+  font-size: 5rem;
 }
 
-
-/* =====================
-      Start Days
-   ===================== */
+/* ======  Start Days  ======*/
 
 .day1,
 .day10,
 .day14,
 .day15,
 .day23 {
-    grid-row: span 2;
-    font-size: 4rem;
+  grid-row: span 2;
+  font-size: 4rem;
 }
 
 .day4,
 .day9,
 .day18,
 .day22 {
-    grid-column: span 2;
-    font-size: 3rem;
+  grid-column: span 2;
+  font-size: 3rem;
 }
 
 .day24 {
-    grid-row: span 2;
-    grid-column: span 2;
-    font-size: 5rem;
+  grid-row: span 2;
+  grid-column: span 2;
+  font-size: 5rem;
 }
 
 .day25 {
-    grid-row: span 2;
-    grid-column: span 3;
-    font-size: 8rem;
+  grid-row: span 2;
+  grid-column: span 3;
+  font-size: 8rem;
 }
 
 .day1 .front,
@@ -127,51 +107,48 @@ body {
 .day21 .front,
 .day23 .front,
 .day25 .front {
-    background-color: #00661f;
+  background-color: #00661f;
 }
 
-
-/* =====================
-      Animation
-   ===================== */
+/* ======  Animation  ======*/
 
 .container-item {
-    background-color: transparent;
-    perspective: 1000px;
+  background-color: transparent;
+  perspective: 1000px;
 }
 
 .tile {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .container-item:hover .tile {
-    transform: rotateX(180deg);
+  transform: rotateX(180deg);
 }
 
 .front,
 .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    --webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  --webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .front {
-    background-color: #c11f1f;
-    color: #ffffff;
-    border-radius: 10px;
+  background-color: #c11f1f;
+  color: #ffffff;
+  border-radius: 10px;
 }
 
 .back {
-    border-radius: 10px;
-    transform: rotateX(180deg);
+  border-radius: 10px;
+  transform: rotateX(180deg);
 }
